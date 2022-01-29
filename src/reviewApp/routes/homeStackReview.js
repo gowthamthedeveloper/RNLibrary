@@ -1,19 +1,19 @@
-import { createStackNavigator } from 'react-navigation-stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import Header from '../shared/header';
-import Home from '../screens/home';
-import ReviewDetails from '../screens/reviewDetails';
+import Header from '../shared/headerReview';
+import ReviewDetails from '../components/reviewDetails';
+import HomeReview from '../components/homeReview';
 
 const screens = {
   Home: {
-    screen: Home,
+    screen: HomeReview,
     navigationOptions: ({ navigation }) => {
       return {
         headerTitle: () => <Header title='GameZone' navigation={navigation} />
       }
     },
   },
-  ReviewDetails: {
+  ReviewDetail: {
     screen: ReviewDetails,
     navigationOptions: {
       title: 'Review Details',
@@ -22,11 +22,11 @@ const screens = {
 };
 
 // home stack navigator screens
-const HomeStack = createStackNavigator(screens, {
+const HomeStackReview = createNativeStackNavigator(screens, {
   defaultNavigationOptions: {
     headerTintColor: '#444',
     headerStyle: { backgroundColor: '#eee', height: 60 }
   }
 });
 
-export default HomeStack;
+export default HomeStackReview;

@@ -1,6 +1,7 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import HomeStack from '../routes/HomeStack';
-import LaunchScreen from '../screen/LaunchScreen';
+import HomeStack from './routes/HomeStack';
+import LaunchScreen from './screen/LaunchScreen';
 
 class App extends React.Component {
 

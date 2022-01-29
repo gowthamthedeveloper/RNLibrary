@@ -1,12 +1,12 @@
 /*
 * Configure the navigation framework from the below link
 * https://reactnavigation.org/docs/getting-started/
-* run the command in your project - npm install react-navigation-stack
+* npm install –save react-navigation react-navigation-stack react-native-reanimated react-native-gesture-handler react-native-screens react-native-vector-icons
 */
 
 import React from 'react';
 import {Text, View} from 'react-native';
-import { globalStyles } from '../styles/global';
+import { globalStyles } from '../../common/styles/global';
 
 class StackNavigation extends React.Component {
 

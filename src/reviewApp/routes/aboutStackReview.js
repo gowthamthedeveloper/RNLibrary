@@ -1,11 +1,11 @@
-import { createStackNavigator } from 'react-navigation-stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import Header from '../shared/headerReview';
-import About from '../screens/about';
+import AboutReview from '../components/aboutReview';
 
 const screens = {
   About: {
-    screen: About,
+    screen: AboutReview,
     navigationOptions: ({ navigation }) => {
       return {
         headerTitle: () => <Header title='About GameZone' navigation={navigation} />
@@ -14,11 +14,11 @@ const screens = {
   },
 }
 
-const AboutStack = createStackNavigator(screens, {
+const AboutStackReview = createNativeStackNavigator(screens, {
   defaultNavigationOptions: {
     headerTintColor: '#444',
     headerStyle: { backgroundColor: '#eee', height: 60 },
   }
 });
 
-export default AboutStack;
+export default AboutStackReview;

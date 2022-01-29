@@ -1,17 +1,17 @@
-import { createDrawerNavigator } from 'react-navigation-drawer';
-import { createAppContainer } from 'react-navigation';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createAppContainer } from '@react-navigation/native';
 
 // stacks
-import HomeStack from './homeStack';
-import AboutStack from './aboutStack';
+import HomeStackReview from './homeStackReview';
+import AboutStackReview from './aboutStackReview';
 
 // drawer navigation options
 const RootDrawerNavigator = createDrawerNavigator({
   Home: {
-    screen: HomeStack,
+    screen: HomeStackReview,
   },
   About: {
-    screen: AboutStack,
+    screen: AboutStackReview,
   },
 });
 

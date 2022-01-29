@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, FlatList, Alert, TouchableWithoutFeedback, Keyboard } from 'react-native';
-import Header from './components/header';
-import TodoItem from './components/todoItem';
-import AddTodo from './components/addTodo';
+import Header from './header';
+import TodoItem from './todoItem';
+import AddTodo from './addTodo';
 
-export default function TodoApp() {
+export default function AppTodo() {
   const [todos, setTodos] = useState([
     { text: 'buy coffee', key: '1' },
     { text: 'create an app', key: '2' },

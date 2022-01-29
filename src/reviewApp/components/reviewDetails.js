@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
-import { globalStyles, images } from '../styles/global';
-import Card from '../shared/card';
+import { globalStyles, images } from '../../common/styles/global';
+import Card from '../shared/cardReview';
 
 export default function ReviewDetails({ navigation }) {
   const rating = navigation.getParam('rating');

@@ -1,6 +1,6 @@
 import React from 'react';
 import {FlatList, View, Text, StyleSheet, TouchableOpacity} from 'react-native';
-import { globalStyles } from '../styles/global';
+import { globalStyles } from '../../common/styles/global';
 
 
 class HomeScreen extends React.Component {
